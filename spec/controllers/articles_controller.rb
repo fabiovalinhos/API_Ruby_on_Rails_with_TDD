@@ -37,8 +37,8 @@ describe ArticlesController do
 
 
       articles = create_list :article, 2
-      expect(json_data.length).to eq(2)
       subject
+      expect(json_data.length).to eq(2)
       articles.each_with_index do |article, index|
         expect(json_data[index]['attributes']).to eq({
           "title" => article.title,
