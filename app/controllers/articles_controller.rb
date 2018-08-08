@@ -11,5 +11,6 @@ class ArticlesController < ApplicationController
   end
 
   def show
+    render json: Article.recent.find(params[:id])
   end
 end
