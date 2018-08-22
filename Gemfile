@@ -24,6 +24,7 @@ gem 'puma', '~> 3.11'
 
 gem 'active_model_serializers'
 gem 'kaminari'
+gem "octokit"
 
 
 # Reduces boot times through caching; required in config/boot.rb
